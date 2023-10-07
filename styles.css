@@ -1,1 +1,26 @@
 /*  your css code here. If applicable */
+.pulsebox{
+	width:100px;
+	height:100px;
+	background-color:red;
+	margin:0px;
+	padding:0px;
+}
+.pulsebox{
+	transform:scale(1);
+	animation:pulse 1s infinite;
+}
+@keyframes pulse{
+	0%{
+		transform:scale(0.95);
+		box-shadow:0 0 0 0 rgba(0,0,0,0);
+	}
+	70%{
+		transform:scale(1);
+		box-shadow:0 0 0 10px rgba(0,0,0,0);
+	}
+	100%{
+		transform:scale(0.95);
+		box-shadow:0 0 0 0 rgba(0,0,0,0);
+	}
+}
